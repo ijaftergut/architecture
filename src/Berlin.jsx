@@ -12,8 +12,7 @@ function Berlin() {
         <h1>Berlin</h1>
           <section>
           <h2>Featured Projects in Berlin</h2>
-            <div >
-
+            <div className='image-container'>
               {berlinImages.map((berlinImages, index) => (
                 <img className='image' src={berlinImages} alt={`Project ${index + 1}`} />
               ))}

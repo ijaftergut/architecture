@@ -29,3 +29,11 @@ button{
 border-color: none;
 background-color: white;
 }
+
+.image{
+  max-width: 50%;
+  transition: max-width 0.3s ease-in-out;
+}
+.image:hover{
+  transform: scale(1.1);
+}
