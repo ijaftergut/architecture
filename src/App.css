@@ -1,31 +1,31 @@
 
 .project-showcase {
-    width: 100%;
-    overflow: hidden;
-  }
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
   
-  .carousel-container {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    
-  }
-  
-  .carousel-slide {
-    position: relative;
-    min-width: 100%;
-  }
-  
-  .span{
-    width: 34%;
-  }
-  .button{
-    color: none;
-    border: none;
-    z-index: -1;
-    width: 50%;
-    height: 50%;
-  }
+}
+
+.carousel-slide {
+  position: relative;
+  min-width: 100%;
+}
+
+.span{
+  width: 34%;
+}
+.button{
+  color: none;
+  border: none;
+  z-index: -1;
+  width: 50%;
+  height: 50%;
+}
 button{
-  border-color: none;
-  background-color: white;
+border-color: none;
+background-color: white;
 }

@@ -3,13 +3,22 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Berlin from './Berlin';
 import Rome from './Rome';
+import Switzerland from './Switzerland';
 function App() {
   return (
     <div className="app">
       <nav className='all'>
+        <div>
             <Link to='/Home'>HOME</Link>
-            <Link to='/Berlin'>Berlin</Link>
-            <Link to='/Rome'>Rome</Link>
+            </div>
+            <ul>
+            <li>
+            <Link to='/Berlin'>Berlin</Link></li>
+            <li>
+            <Link to='/Rome'>Rome</Link></li>
+            <li>
+            <Link to='/Switzerland'>Switzerland</Link></li>
+            </ul>
             </nav>
             <main className='all'>
             <Routes>
@@ -22,6 +31,11 @@ function App() {
               <Route path='/Rome' element={
                 <Rome
               />}/>
+               <Route path='/Switzerland' element={
+                <Switzerland
+              />}/>
+              
+              
             </Routes>
             </main>
   </div>
