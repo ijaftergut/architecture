@@ -38,7 +38,7 @@ function Home() {
             <div className="carousel-container" style={showSlide(currentIndex)}>
               {projectImages.map((image, index) => (
                 <div key={index} className="carousel-slide">
-                  <img className='image' src={image} alt={`Project ${index + 1}`} />
+                  <img src={image} alt={`Project ${index + 1}`} />
                 </div>
               ))}
             </div>
