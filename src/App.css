@@ -1,4 +1,6 @@
-
+body{
+  background-color: teal;
+}
 .project-showcase {
   width: 100%;
   overflow: hidden;
@@ -30,10 +32,51 @@ border-color: none;
 background-color: white;
 }
 
-.image{
-  max-width: 50%;
-  transition: max-width 0.3s ease-in-out;
+.image-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
-.image:hover{
-  transform: scale(1.1);
+
+.image {
+  position: absolute;
+  margin: 10px;
+  border-radius: 30px;
+  width: 30%;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;;
+  border: darkslategrey solid 3px;
+}
+
+.image:hover {
+  z-index: 1; 
+  opacity: .7;
+  border-radius: 30px;
+  transform: scale(1.1); 
+  border: black double 3px;
+}
+
+.image:nth-child(2) {
+  left: 33%;
+}
+
+.image:nth-child(3) {
+  left: 66%; 
+}
+.image:nth-child(4) {
+  left: 0%;
+  margin-top: 48%;
+}
+
+.image:nth-child(5) {
+  left: 33%; 
+  margin-top: 48%;
+}
+.image:nth-child(6) {
+  left: 66%;
+  margin-top: 48%;
+}
+
+.image:nth-child(7) {
+  left: 0%;
+  margin-top: 93%;
 }

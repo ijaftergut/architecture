@@ -10,12 +10,11 @@ function Switzerland() {
         <h1>Switzerland</h1>
           <section>
           <h2>Featured Projects in Switzerland</h2>
-            <div>
-              {switzerlandImages.map((image, index) => (
-                <div>
-                  <img className='image' src={image} alt={`Project ${index + 1}`} />
-                </div>
-              ))}</div>
+          <div className='image-container'>
+          {switzerlandImages.map((switzerlandImages, index) => (
+            <img className='image' src={switzerlandImages} alt={`Project ${index + 1}`} key={index} />
+          ))}
+        </div>
         </section>
         </>
     )
