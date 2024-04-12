@@ -1,5 +1,10 @@
 body{
-  background-color: teal;
+  background-color: gray;
+  color: azure;
+  
+}
+a:visited{
+  color: black;
 }
 .project-showcase {
   width: 100%;
@@ -32,19 +37,14 @@ border-color: none;
 background-color: white;
 }
 
-.image-container {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .image {
-  position: absolute;
+  position: relative;
   margin: 10px;
   border-radius: 30px;
   width: 30%;
   transition: transform 2s ease-in-out, opacity 2s ease-in-out;;
-  border: darkslategrey solid 3px;
+  border: black solid 3px;
 }
 
 .image:hover {
@@ -52,7 +52,7 @@ background-color: white;
   opacity: .7;
   border-radius: 30px;
   transform: scale(1.1); 
-  border: black double 3px;
+  border: darkslategrey double 3px;
 }
 
 .image:nth-child(2) {

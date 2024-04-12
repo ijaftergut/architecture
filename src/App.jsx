@@ -4,6 +4,7 @@ import Home from './Home';
 import Berlin from './Berlin';
 import Rome from './Rome';
 import Switzerland from './Switzerland';
+import JudiscesMuseum from './JudiscesMuseum';
 function App() {
   return (
     <div className="app">
@@ -27,6 +28,9 @@ function App() {
               />}/> 
               <Route path='/Berlin' element={
                 <Berlin
+              />}/> 
+              <Route path='/JudiscesMuseum' element={
+                <JudiscesMuseum
               />}/> 
               <Route path='/Rome' element={
                 <Rome
